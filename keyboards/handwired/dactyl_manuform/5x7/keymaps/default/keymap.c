@@ -22,18 +22,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LCTL,   KC_A,    KC_S,    KC_D,   KC_F,   KC_G,   TAB_RO,
         OSM(MOD_LSFT),   KC_Z,    KC_X,    KC_C,   KC_V,   KC_B,
         KC_CAPS,   KC_LGUI, TAB_L,   TAB_R,
-                                    TT(_FN), KC_SPC,
-                                    KC_END, KC_HOME,
-                                    KC_PSCR, TASK,
+                    LSFT_T(KC_ESC),LCTL_T(KC_ENT),
+                    KC_TAB,MO(_FN),
+                    KC_DEL, KC_GRV,
         // right hand
-                          KC_7,    KC_8,    KC_9,    KC_0,     KC_MINS,  KC_EQL,   KC_GRV,
+                          KC_7,    KC_8,    KC_9,    KC_0,     KC_MINS,  KC_EQL,   KC_BSPC,
                           KC_RBRC, KC_Y,    KC_U,    KC_I,     KC_O,     KC_P,     KC_BSLS,
                       TG(_NUMPAD), KC_H,    KC_J,    KC_K,     KC_L,     KC_SCLN,  KC_QUOT,
                                    KC_N,    KC_M,    KC_COMM,  KC_DOT,   KC_SLSH,  OSM(MOD_RSFT),
                                             KC_LEFT, KC_UP,    KC_DOWN,  KC_RGHT,
-             KC_BSPC, KC_ENT,
-             KC_PGUP, KC_PGDN,
-             KC_LCTL, KC_LALT
+                    RCTL_T(KC_SPC), RSFT_T(KC_TAB),
+                    MO(_NUMPAD),  KC_DEL,
+                    KC_LGUI, KC_LALT
     ),
 
     [_FN] = LAYOUT_5x7(
