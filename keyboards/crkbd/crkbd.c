@@ -22,9 +22,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ANIM_RENDER_WPM true
 #define FAST_TYPE_WPM 45 // Switch to fast animation when over words per minute
 
-#ifdef OLED_ENABLE
-#    include "music-bars.c"
-#endif
+/* #ifdef OLED_ENABLE */
+/* #    include "music-bars.c" */
+/* #endif */
 
 #ifdef SWAP_HANDS_ENABLE
 __attribute__((weak)) const keypos_t PROGMEM hand_swap_config[MATRIX_ROWS][MATRIX_COLS] = {
@@ -157,7 +157,7 @@ bool oled_task_kb(void) {
         oled_render_layer_state();
         oled_render_keylog();
     } else {
-        oled_render_anim();
+        oled_render_logo();
     }
     return false;
 }
